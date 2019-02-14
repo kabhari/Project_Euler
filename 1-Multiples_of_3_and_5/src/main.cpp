@@ -18,8 +18,8 @@ int SumFunc(int number, int div);
 int main(int argc, char** argv)
 {
 
-	try {
-
+	try 
+	{
 		// default max is 1000 but allow user can override
 		auto max = (argc > 1) ? atoi(argv[1]) : 1000;
 
