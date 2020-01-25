@@ -7,6 +7,11 @@ src: https://projecteuler.net/problem=4
 
 */
 
+/*
+
+output: The largest palindrome made from the product of two 3-digit numbers is 906609
+
+*/
 
 #include <stdio.h>
 #include <iostream>
@@ -17,13 +22,15 @@ int main(int argc, char** argv)
 {
 	try
 	{
-		
+		// init
 		int largestPalindrome(0);
 
+		// loop through 3-digit numbers and multiply one by one (the inner loop starts where outter loop is to be more efficient)
 		for (auto i = 999U; i > 99; --i)
 		{
 			for (auto j = i; j > 99; --j)
 			{
+				// check to see if the result is palindromic + largest
 				if (isPalindromic(i*j) && largestPalindrome < i*j)
 				{
 					largestPalindrome = i * j;
@@ -31,6 +38,7 @@ int main(int argc, char** argv)
 			}
 		}
 
+		// print the result
 		if (largestPalindrome > 0)
 		{
 			std::cout << "The largest palindrome made from the product of two 3-digit numbers is " << largestPalindrome << std::endl;
