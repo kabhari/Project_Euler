@@ -1,3 +1,3 @@
 # Project_Euler
-Solving https://en.wikipedia.org/wiki/Project_Euler one problem at a time. Archived problems can be found at https://projecteuler.net/archives
+Solutions to [Project Euler](https://en.wikipedia.org/wiki/Project_Euler) [problems](https://projecteuler.net/archives) in c++, python, and C#. The final answers can be found [here](https://github.com/nayuki/Project-Euler-solutions/blob/master/Answers.txt).
 
