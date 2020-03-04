@@ -5,17 +5,16 @@
 
 
 def main():
-    print (find_abc())
+    print (find_abc(1000))
 
 # We do this in a function to avoid breaking from nested loops and instead just return
-def find_abc():
+def find_abc(total):
     # since a, b, c are natural numbers and a+b+c = 1000, they all cannot be larger than 998 or less than 1
-    for a in range(1, 998):
-        for b in range(1, 998):
-            for c in range(1, 998):
-                # I'm guessing since summation is faster, its more efficient to compute that one first
-                if a + b + c == 1000 and a * a + b * b == c * c:
-                    return (a*b*c) # the question specifies there exists exactly one case so we can return at this point
+    for a in range(1, total - 2): # -2 bc the minimum value for b and c is 1 (natural numbers)
+        for b in range(a + 1, total - 2):
+            c = total - a - b
+            if a * a + b * b == c * c:
+                return (a*b*c) # the question specifies there exists exactly one case so we can return at this point
 
 if __name__ == '__main__':
     main()
