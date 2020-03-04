@@ -11,7 +11,7 @@ def main():
 def find_abc(total):
     # since a, b, c are natural numbers and a+b+c = 1000, they all cannot be larger than 998 or less than 1
     for a in range(1, total - 2): # -2 bc the minimum value for b and c is 1 (natural numbers)
-        for b in range(a + 1, total - 2):
+        for b in range(a, total - 2):
             c = total - a - b
             if a * a + b * b == c * c:
                 return (a*b*c) # the question specifies there exists exactly one case so we can return at this point
