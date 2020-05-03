@@ -65,8 +65,8 @@ def compute():
             if i - mul_size >= 0 and j + mul_size <= grid.shape[0]:
                 result = max(result, mul(grid, i, j, -1, 1))
 
-    print("greatest product of " + str(mul_size) + " adjacent numbers is " + str(result))
+    return result
 
 
 if __name__ == '__main__':
-    compute()
+    print("greatest product of " + str(mul_size) + " adjacent numbers is " + str(compute()))
