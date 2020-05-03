@@ -1,3 +1,3 @@
 # Project_Euler
-Solutions to [Project Euler](https://en.wikipedia.org/wiki/Project_Euler) [problems](https://projecteuler.net/archives) (in c++, python, or c#). Please refer to [this page](https://github.com/luckytoilet/projecteuler-solutions/blob/master/Solutions.md) for final answers.
+Solutions to [Project Euler](https://en.wikipedia.org/wiki/Project_Euler) [problems](https://projecteuler.net/archives); please refer to [this page](https://github.com/luckytoilet/projecteuler-solutions/blob/master/Solutions.md) for final answers.
 
