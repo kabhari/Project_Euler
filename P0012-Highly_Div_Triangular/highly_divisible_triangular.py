@@ -25,19 +25,18 @@ final answer:
 # init const numbers
 div_num = 500
 
+
 # method to compute nth triangle number
 def compute_triangle(n):
     sum = 0
-    for i in range(n+1):
+    for i in range(n + 1):
         sum += i
     return sum
 
 
-
-
 def compute():
     # loop until answer is found
-    n = 2 # we start from number 2 and up
+    n = 2  # we start from number 2 and up
     while True:
         tri = compute_triangle(n)
         # every number is divisible by 1 and itself so no point in going over them (other than 1 but we can safely ignore)
@@ -48,6 +47,7 @@ def compute():
                 if counter >= 500:
                     return n
         n = n + 1
+
 
 if __name__ == '__main__':
     print(compute())
