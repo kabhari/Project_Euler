@@ -45,7 +45,6 @@ def mul(grid, x, y, x_dir, y_dir):
 def compute():
     # initialize
     grid_size = np.sqrt(len(g))
-    print(grid_size)
     result = -1
 
     # reshape the vector to a 20 by 20 matrix
