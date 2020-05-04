@@ -9,6 +9,7 @@ final answer: 137846528820
 
 grid_size = 20
 
+
 def factorial(n):
     m = n - 1
     if m >= 1:
@@ -20,9 +21,8 @@ def factorial(n):
 def compute():
     # in a X by X grid, we have (X * 2)! possible permutations - however, since we only have two possible moves (right and
     # down), then we have X! * 2 movements (X! for down and X! for right) that make no difference, so overall we have
-#   # X^2! / ( X! * X!) possible routes
-    return factorial(grid_size*2)/(factorial(grid_size)**2)
-
+    # X^2! / ( X! * X!) possible routes
+    return factorial(grid_size * 2) / (factorial(grid_size) ** 2)
 
 
 if __name__ == '__main__':
