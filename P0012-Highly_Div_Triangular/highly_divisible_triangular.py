@@ -44,7 +44,7 @@ def compute():
         for i in range(2, tri):
             if tri % i == 0:
                 counter = counter + 1
-                if counter >= 500:
+                if counter >= div_num:
                     return n
         n = n + 1
 
